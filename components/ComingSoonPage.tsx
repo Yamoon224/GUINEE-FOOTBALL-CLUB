@@ -8,8 +8,8 @@ import { ChevronLeft } from "lucide-react";
 import type { ReactNode } from "react";
 
 const clubMeta: Record<string, { nom: string; acronyme: string; logo: string; color: string }> = {
-    jag: { nom: "Jaguar Académie Guinée", acronyme: "JAG", logo: "/images/jag-logo.png", color: "#CC0000" },
-    atletico: { nom: "Club Atlético de Colèah", acronyme: "Atlético", logo: "/images/atletico-logo.png", color: "#F5B800" },
+    jag: { nom: "Jaguar Académie Guinée", acronyme: "JAG", logo: "/images/jag-logo.jpg", color: "#CC0000" },
+    atletico: { nom: "Club Atlético de Colèah", acronyme: "Atlético", logo: "/images/atletico-logo.jpg", color: "#F5B800" },
 };
 
 export default function ComingSoonPage({

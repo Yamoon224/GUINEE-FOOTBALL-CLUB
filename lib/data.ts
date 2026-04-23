@@ -256,7 +256,7 @@ export const clubs: Club[] = [
     ville: "Conakry, Guinée",
     description:
       "Fondée le 28 août 2024 à Conakry par Moussa Touré, la Jaguar Académie est une école de sport dédiée à la jeunesse guinéenne. Elle allie excellence académique et performance sportive, formant des joueurs talentueux et des citoyens responsables. En 2025, elle participe pour la première fois à la Ligue Guinéenne des Académies (3ᵉ édition).",
-    logo: "/images/jag-logo.png",
+    logo: "/images/jag-logo.jpg",
     hero: "/images/jag-hero.jpg",
     couleurPrimaire: "#CC0000",
     couleurSecondaire: "#111111",
@@ -280,7 +280,7 @@ export const clubs: Club[] = [
     ville: "Colèah, Conakry",
     description:
       "Fondé le 2 octobre 1998 à Colèah, l'Atlético de Colèah est l'un des clubs les plus anciens et titrés de Conakry. Vice-champion de Guinée trois fois (2010-2012), vainqueur de la Coupe Rusal 2005, de la 1ʳᵉ édition des Trophées Areeba 2007. Depuis 2025, refondé par le président Touré Moussa, il dispose d'une structure complète hommes et femmes.",
-    logo: "/images/atletico-logo.png",
+    logo: "/images/atletico-logo.jpg",
     hero: "/images/atletico-hero.jpg",
     couleurPrimaire: "#F5B800",
     couleurSecondaire: "#1A1A1A",

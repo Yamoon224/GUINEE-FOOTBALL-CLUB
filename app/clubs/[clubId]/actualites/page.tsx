@@ -8,8 +8,8 @@ import { useLocale } from "@/lib/locale-context";
 import { ChevronLeft, CalendarDays } from "lucide-react";
 
 const clubData: Record<string, { nom: string; acronyme: string; logo: string; hero: string; color: string; colorDark: string }> = {
-  jag: { nom: "Jaguar Académie Guinée", acronyme: "JAG", logo: "/images/jag-logo.png", hero: "/images/jag-hero.jpg", color: "#CC0000", colorDark: "#990000" },
-  atletico: { nom: "Club Atlético de Colèah", acronyme: "Atlético", logo: "/images/atletico-logo.png", hero: "/images/atletico-hero.jpg", color: "#F5B800", colorDark: "#C9950A" },
+  jag: { nom: "Jaguar Académie Guinée", acronyme: "JAG", logo: "/images/jag-logo.jpg", hero: "/images/jag-hero.jpg", color: "#CC0000", colorDark: "#990000" },
+  atletico: { nom: "Club Atlético de Colèah", acronyme: "Atlético", logo: "/images/atletico-logo.jpg", hero: "/images/atletico-hero.jpg", color: "#F5B800", colorDark: "#C9950A" },
 };
 
 type Article = { id: number; titre: string; contenu: string; image?: string; datePublication: string; categorie: string };
@@ -28,7 +28,7 @@ const actualitesData: Record<string, Article[]> = {
       id: 2,
       titre: "Nouveau maillot domicile 25/26 dévoilé",
       contenu: "La JAG a officiellement présenté son nouveau maillot domicile pour la saison 2025/2026. Dans les couleurs traditionnelles or et noir, ce maillot représente l'identité et les valeurs du club : excellence, discipline et fierté guinéenne.",
-      image: "/images/jag-logo.png",
+      image: "/images/jag-logo.jpg",
       datePublication: "2025-04-10",
       categorie: "Club",
     },
@@ -46,7 +46,7 @@ const actualitesData: Record<string, Article[]> = {
       id: 4,
       titre: "Refondation 2025 : notre projet sportif",
       contenu: "Depuis sa refondation en 2025 par le président Touré Moussa, l'Atlético de Colèah s'est doté d'une structure complète avec des équipes masculines et féminines. Le club entend renouer avec ses années de gloire, lui qui fut vice-champion de Guinée à trois reprises.",
-      image: "/images/atletico-logo.png",
+      image: "/images/atletico-logo.jpg",
       datePublication: "2025-04-05",
       categorie: "Club",
     },

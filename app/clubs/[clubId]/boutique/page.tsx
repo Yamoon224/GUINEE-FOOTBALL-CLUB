@@ -18,7 +18,7 @@ const clubData: Record<string, {
   jag: {
     nom: "Jaguar Académie Guinée",
     acronyme: "JAG",
-    logo: "/images/jag-logo.png",
+    logo: "/images/jag-logo.jpg",
     hero: "/images/jag-hero.jpg",
     color: "#CC0000",
     colorDark: "#990000",
@@ -26,7 +26,7 @@ const clubData: Record<string, {
   atletico: {
     nom: "Club Atlético de Colèah",
     acronyme: "Atlético",
-    logo: "/images/atletico-logo.png",
+    logo: "/images/atletico-logo.jpg",
     hero: "/images/atletico-hero.jpg",
     color: "#F5B800",
     colorDark: "#C9950A",

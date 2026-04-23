@@ -12,7 +12,7 @@ const clubs = [
     acronyme: "JAG",
     fondation: "2005",
     ville: "Conakry",
-    logo: "/images/jag-logo.png",
+    logo: "/images/jag-logo.jpg",
     hero: "/images/jag-hero.jpg",
     couleurPrimaire: "#CC0000",
     description: {
@@ -32,7 +32,7 @@ const clubs = [
     acronyme: "Atlético",
     fondation: "1998",
     ville: "Colèah, Conakry",
-    logo: "/images/atletico-logo.png",
+    logo: "/images/atletico-logo.jpg",
     hero: "/images/atletico-hero.jpg",
     couleurPrimaire: "#F5B800",
     description: {
