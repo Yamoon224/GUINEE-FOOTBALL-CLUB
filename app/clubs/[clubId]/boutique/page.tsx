@@ -20,16 +20,16 @@ const clubData: Record<string, {
     acronyme: "JAG",
     logo: "/images/jag-logo.jpg",
     hero: "/images/jag-hero.jpg",
-    color: "#D97706",
-    colorDark: "#B45309",
+    color: "#CC0000",
+    colorDark: "#990000",
   },
   atletico: {
     nom: "Club Atlético de Colèah",
     acronyme: "Atlético",
     logo: "/images/atletico-logo.jpg",
     hero: "/images/atletico-hero.jpg",
-    color: "#DC2626",
-    colorDark: "#B91C1C",
+    color: "#F5B800",
+    colorDark: "#C9950A",
   },
 };
 

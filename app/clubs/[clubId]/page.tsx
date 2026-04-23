@@ -22,7 +22,7 @@ export default function ClubPage() {
         <div className="flex-1 flex items-center justify-center px-4">
           <div className="text-center">
             <p className="text-xl font-black text-foreground mb-2">Club introuvable</p>
-            <Link href="/" className="text-sm font-semibold hover:underline" style={{ color: "#D97706" }}>
+            <Link href="/" className="text-sm font-semibold hover:underline" style={{ color: "#CC0000" }}>
               Retour à l&apos;accueil
             </Link>
           </div>

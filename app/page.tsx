@@ -14,7 +14,7 @@ const clubs = [
     ville: "Conakry",
     logo: "/images/jag-logo.jpg",
     hero: "/images/jag-hero.jpg",
-    couleurPrimaire: "#D97706",
+    couleurPrimaire: "#CC0000",
     description: {
       fr: "La Jaguar Académie Guinée est un club de football guinéen fondé pour promouvoir les jeunes talents de Conakry. Réputée pour sa formation rigoureuse, l'académie développe des joueurs compétitifs à travers ses trois catégories.",
       en: "Jaguar Académie Guinée is a Guinean football club founded to promote young talent from Conakry. Known for rigorous training, the academy develops competitive players across its three age groups.",
@@ -34,7 +34,7 @@ const clubs = [
     ville: "Colèah, Conakry",
     logo: "/images/atletico-logo.jpg",
     hero: "/images/atletico-hero.jpg",
-    couleurPrimaire: "#DC2626",
+    couleurPrimaire: "#F5B800",
     description: {
       fr: "Le Club Atlético de Colèah est un club historique du quartier de Colèah à Conakry. Avec une tradition sportive solide et une grande communauté de supporters, il représente la fierté de son quartier.",
       en: "Club Atlético de Colèah is a historic club from the Colèah district of Conakry. With a solid sporting tradition and a large supporter community, it embodies the pride of its neighbourhood.",

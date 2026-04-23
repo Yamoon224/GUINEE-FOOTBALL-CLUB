@@ -9,8 +9,8 @@ import { useLocale } from "@/lib/locale-context";
 import type { Translations } from "@/lib/i18n";
 
 const clubs = [
-  { id: "jag", nom: "Jaguar Académie Guinée", acronyme: "JAG", logo: "/images/jag-logo.jpg", color: "#D97706" },
-  { id: "atletico", nom: "Club Atlético de Colèah", acronyme: "Atlético", logo: "/images/atletico-logo.jpg", color: "#DC2626" },
+  { id: "jag", nom: "Jaguar Académie Guinée", acronyme: "JAG", logo: "/images/jag-logo.jpg", color: "#CC0000" },
+  { id: "atletico", nom: "Club Atlético de Colèah", acronyme: "Atlético", logo: "/images/atletico-logo.jpg", color: "#F5B800" },
 ];
 
 function getClubMenuItems(clubId: string, t: Translations) {
