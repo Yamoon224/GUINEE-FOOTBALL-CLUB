@@ -92,7 +92,7 @@ export default function HomePage() {
             </section>
 
             {/* ── Message du Président ────────────────────────── */}
-            <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-20">
+            <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 md:py-15">
                 <h2 className="text-xl md:text-2xl font-black text-foreground text-center mb-10 tracking-tight">
                     Message du Président
                 </h2>

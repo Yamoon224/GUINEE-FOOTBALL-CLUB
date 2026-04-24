@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     description:
         "Site officiel de la Jaguar Académie Guinée (JAG) et du Club Atlético de Colèah — Cadets, Juniors, Seniors à Conakry, Guinée.",
     keywords: ["football", "guinée", "conakry", "jaguar académie", "atlético colèah", "JAG"],
+    icons: {
+        icon: "/images/jag-logo.png",
+        shortcut: "/images/jag-logo.png",
+        apple: "/images/jag-logo.png",
+    },
 };
 
 export default function RootLayout({

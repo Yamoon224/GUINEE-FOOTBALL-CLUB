@@ -109,9 +109,9 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
-          <span className="font-black text-base md:text-lg tracking-tight text-foreground">GFC</span>
+          <Image src="/images/FGF-Logo-.png" alt="FGF" width={36} height={36} className="object-contain" />
           <span className="hidden sm:block text-muted-foreground text-xs font-medium border-l border-border pl-2">
-            Guinée Football Clubs
+            Fédération Guinéenne de Football <span className="font-bold text-foreground">(FGF)</span>
           </span>
         </Link>
 

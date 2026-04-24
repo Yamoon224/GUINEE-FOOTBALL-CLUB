@@ -26,12 +26,18 @@ const photosData: Record<string, Photo[]> = {
   ],
 };
 
+const PAGE_SIZE = 9;
+
 export default function PhotosPage({ params }: { params: Promise<{ clubId: string }> }) {
   const { clubId } = use(params);
   const { locale } = useLocale();
   const club = clubData[clubId] ?? clubData.jag;
   const photos = photosData[clubId] ?? [];
   const [lightbox, setLightbox] = useState<Photo | null>(null);
+  const [page, setPage] = useState(1);
+
+  const totalPages = Math.ceil(photos.length / PAGE_SIZE);
+  const paginatedPhotos = photos.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   return (
     <div className="min-h-screen bg-background">
@@ -58,25 +64,48 @@ export default function PhotosPage({ params }: { params: Promise<{ clubId: strin
         {photos.length === 0 ? (
           <p className="text-center text-muted-foreground py-16">{locale === "fr" ? "Aucune photo disponible." : "No photos available."}</p>
         ) : (
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
-            {photos.map((p) => (
+          <>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+              {paginatedPhotos.map((p) => (
+                <button
+                  key={p.id}
+                  onClick={() => setLightbox(p)}
+                  className="group relative aspect-video bg-muted rounded-sm overflow-hidden focus:outline-none focus:ring-2"
+                  style={{ ['--tw-ring-color' as string]: club.color }}
+                >
+                  <Image src={p.url} alt={p.legende ?? ""} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors" />
+                  {p.legende && (
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-3 py-2">
+                      <p className="text-white text-xs font-semibold text-left line-clamp-1">{p.legende}</p>
+                      {p.categorie && <p className="text-white/60 text-[10px]">{p.categorie}</p>}
+                    </div>
+                  )}
+                </button>
+              ))}
+            </div>
+
+            {/* Pagination */}
+            <div className="flex items-center justify-center gap-4 mt-8 text-sm font-medium">
               <button
-                key={p.id}
-                onClick={() => setLightbox(p)}
-                className="group relative aspect-video bg-muted rounded-sm overflow-hidden focus:outline-none focus:ring-2"
-                style={{ ['--tw-ring-color' as string]: club.color }}
+                onClick={() => setPage((p) => Math.max(1, p - 1))}
+                disabled={page === 1}
+                className="px-3 py-1.5 rounded border border-border hover:bg-muted disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
               >
-                <Image src={p.url} alt={p.legende ?? ""} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors" />
-                {p.legende && (
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-3 py-2">
-                    <p className="text-white text-xs font-semibold text-left line-clamp-1">{p.legende}</p>
-                    {p.categorie && <p className="text-white/60 text-[10px]">{p.categorie}</p>}
-                  </div>
-                )}
+                {locale === "fr" ? "Précédent" : "Previous"}
               </button>
-            ))}
-          </div>
+              <span className="text-muted-foreground">
+                {page} / {totalPages}
+              </span>
+              <button
+                onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+                disabled={page === totalPages}
+                className="px-3 py-1.5 rounded border border-border hover:bg-muted disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              >
+                {locale === "fr" ? "Suivant" : "Next"}
+              </button>
+            </div>
+          </>
         )}
       </div>
 
