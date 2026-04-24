@@ -117,7 +117,7 @@ export default function HomePage() {
                             </p>
                         </blockquote>
                         <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">
-                            — Le Président, Guinée Football Clubs
+                            — Moussa TOURE, Le Président, Guinée Football Clubs
                         </p>
                     </div>
                 </div>
