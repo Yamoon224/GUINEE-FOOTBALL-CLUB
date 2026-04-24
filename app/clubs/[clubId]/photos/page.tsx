@@ -44,8 +44,8 @@ export default function PhotosPage({ params }: { params: Promise<{ clubId: strin
       <Navbar />
 
       {/* Hero */}
-      <div className="relative h-40 sm:h-52 overflow-hidden" style={{ backgroundColor: club.colorDark }}>
-        <Image src={club.hero} alt={club.nom} fill className="object-cover opacity-15" />
+      <div className="relative h-40 sm:h-52 overflow-hidden">
+        <Image src={club.hero} alt={club.nom} fill className="object-cover" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 h-full flex flex-col justify-end pb-6">
           <Link href={`/clubs/${clubId}`} className="flex items-center gap-1.5 text-white/60 hover:text-white text-xs mb-3 transition-colors w-fit">
             <ChevronLeft size={14} />{club.acronyme}
