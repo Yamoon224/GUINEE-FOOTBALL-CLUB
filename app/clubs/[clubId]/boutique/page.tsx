@@ -19,7 +19,7 @@ const clubData: Record<string, {
     nom: "Jaguar Académie Guinée",
     acronyme: "JAG",
     logo: "/images/jag-logo.png",
-    hero: "/images/jag-hero.jpg",
+    hero: "/images/jag-hero.png",
     color: "#CC0000",
     colorDark: "#990000",
   },

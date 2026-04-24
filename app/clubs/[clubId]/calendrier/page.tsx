@@ -8,7 +8,7 @@ import { useLocale } from "@/lib/locale-context";
 import { CalendarDays, ChevronLeft, MapPin, ArrowRight } from "lucide-react";
 
 const clubData: Record<string, { nom: string; acronyme: string; logo: string; hero: string; color: string; colorDark: string }> = {
-  jag: { nom: "Jaguar Académie Guinée", acronyme: "JAG", logo: "/images/jag-logo.png", hero: "/images/jag-hero.jpg", color: "#CC0000", colorDark: "#990000" },
+  jag: { nom: "Jaguar Académie Guinée", acronyme: "JAG", logo: "/images/jag-logo.png", hero: "/images/jag-hero.png", color: "#CC0000", colorDark: "#990000" },
   atletico: { nom: "Club Atlético de Colèah", acronyme: "Atlético", logo: "/images/atletico-logo.png", hero: "/images/atletico-hero.jpg", color: "#F5B800", colorDark: "#C9950A" },
 };
 

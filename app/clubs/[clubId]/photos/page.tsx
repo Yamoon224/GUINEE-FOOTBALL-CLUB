@@ -8,17 +8,18 @@ import { useLocale } from "@/lib/locale-context";
 import { ChevronLeft, X } from "lucide-react";
 
 const clubData: Record<string, { nom: string; acronyme: string; logo: string; hero: string; color: string; colorDark: string }> = {
-  jag: { nom: "Jaguar Académie Guinée", acronyme: "JAG", logo: "/images/jag-logo.png", hero: "/images/jag-hero.jpg", color: "#CC0000", colorDark: "#990000" },
+  jag: { nom: "Jaguar Académie Guinée", acronyme: "JAG", logo: "/images/jag-logo.png", hero: "/images/jag-hero.png", color: "#CC0000", colorDark: "#990000" },
   atletico: { nom: "Club Atlético de Colèah", acronyme: "Atlético", logo: "/images/atletico-logo.png", hero: "/images/atletico-hero.jpg", color: "#F5B800", colorDark: "#C9950A" },
 };
 
 type Photo = { id: number; url: string; legende?: string; categorie?: string };
 
 const photosData: Record<string, Photo[]> = {
-  jag: [
-    { id: 1, url: "/images/jag-hero.jpg", legende: "Stade JAG — Ambiance match", categorie: "Stade" },
-    { id: 2, url: "/images/jag-logo.png", legende: "Logo officiel Jaguar Académie Guinée", categorie: "Identité" },
-  ],
+  jag: Array.from({ length: 161 }, (_, i) => ({
+    id: i + 1,
+    url: `/images/gallery/jag/${i + 1}.jpeg`,
+    categorie: "JAG",
+  })),
   atletico: [
     { id: 3, url: "/images/atletico-hero.jpg", legende: "Stade Atlético de Colèah", categorie: "Stade" },
     { id: 4, url: "/images/atletico-logo.png", legende: "Logo officiel Atlético de Colèah", categorie: "Identité" },

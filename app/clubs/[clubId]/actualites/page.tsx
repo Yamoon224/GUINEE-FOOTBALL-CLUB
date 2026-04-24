@@ -8,7 +8,7 @@ import { useLocale } from "@/lib/locale-context";
 import { ChevronLeft, CalendarDays } from "lucide-react";
 
 const clubData: Record<string, { nom: string; acronyme: string; logo: string; hero: string; color: string; colorDark: string }> = {
-  jag: { nom: "Jaguar Académie Guinée", acronyme: "JAG", logo: "/images/jag-logo.png", hero: "/images/jag-hero.jpg", color: "#CC0000", colorDark: "#990000" },
+  jag: { nom: "Jaguar Académie Guinée", acronyme: "JAG", logo: "/images/jag-logo.png", hero: "/images/jag-hero.png", color: "#CC0000", colorDark: "#990000" },
   atletico: { nom: "Club Atlético de Colèah", acronyme: "Atlético", logo: "/images/atletico-logo.png", hero: "/images/atletico-hero.jpg", color: "#F5B800", colorDark: "#C9950A" },
 };
 
@@ -20,7 +20,7 @@ const actualitesData: Record<string, Article[]> = {
       id: 1,
       titre: "La JAG brille à la Ligue des Académies",
       contenu: "La Jaguar Académie Guinée réalise un début de saison remarquable avec trois victoires en cinq matchs. L'équipe Juniors se positionne à la 3e place du classement général, démontrant la qualité de la formation mise en place depuis la fondation du club.",
-      image: "/images/jag-hero.jpg",
+      image: "/images/jag-hero.png",
       datePublication: "2025-04-15",
       categorie: "Sports",
     },

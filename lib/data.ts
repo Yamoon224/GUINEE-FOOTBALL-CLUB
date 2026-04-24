@@ -257,7 +257,7 @@ export const clubs: Club[] = [
     description:
       "Fondée le 28 août 2024 à Conakry par Moussa Touré, la Jaguar Académie est une école de sport dédiée à la jeunesse guinéenne. Elle allie excellence académique et performance sportive, formant des joueurs talentueux et des citoyens responsables. En 2025, elle participe pour la première fois à la Ligue Guinéenne des Académies (3ᵉ édition).",
     logo: "/images/jag-logo.png",
-    hero: "/images/jag-hero.jpg",
+    hero: "/images/jag-hero.png",
     couleurPrimaire: "#CC0000",
     couleurSecondaire: "#111111",
     equipes: {
