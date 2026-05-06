@@ -6,6 +6,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import { getClub, calcAge } from "@/lib/data";
 import { useLocale } from "@/lib/locale-context";
+import { Facebook, Youtube } from "lucide-react";
 import type { TeamCategory } from "@/lib/data";
 
 const CATEGORIES: TeamCategory[] = ["Cadets", "Juniors", "Seniors"];
@@ -124,6 +125,32 @@ export default function ClubPage() {
       <footer className="border-t border-border bg-muted/30 py-8 text-center text-muted-foreground text-sm">
         <p className="font-semibold text-foreground mb-1">{club.nom}</p>
         <p>{club.ville} &mdash; {t.club.founded} {club.fondation}</p>
+        {club.social && (
+          <div className="flex items-center justify-center gap-4 mt-4">
+            {club.social.facebook && (
+              <a
+                href={club.social.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-xs font-semibold hover:text-foreground transition-colors"
+                style={{ color: club.couleurPrimaire }}
+              >
+                <Facebook size={16} /> Facebook
+              </a>
+            )}
+            {club.social.youtube && (
+              <a
+                href={club.social.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-xs font-semibold hover:text-foreground transition-colors"
+                style={{ color: club.couleurPrimaire }}
+              >
+                <Youtube size={16} /> YouTube
+              </a>
+            )}
+          </div>
+        )}
       </footer>
     </div>
   );

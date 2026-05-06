@@ -23,6 +23,7 @@ export type Club = {
   couleurSecondaire: string;
   equipes: Record<TeamCategory, Player[]>;
   stats: { label: string; value: string }[];
+  social?: { facebook?: string; youtube?: string };
 };
 
 // ─── Jaguar Académie Guinée ──────────────────────────────────────────────────
@@ -271,6 +272,10 @@ export const clubs: Club[] = [
       { label: "Seniors", value: "18" },
       { label: "Staff technique", value: "22" },
     ],
+    social: {
+      facebook: "https://www.facebook.com/MoussaToureAuteur",
+      youtube: "https://youtube.com/@moussatoure-ecrivain?si=vSxbMZqT2F2mJwzc",
+    },
   },
   {
     id: "atletico",
@@ -295,6 +300,10 @@ export const clubs: Club[] = [
       { label: "Seniors", value: "24" },
       { label: "Fondé en", value: "1998" },
     ],
+    social: {
+      facebook: "https://www.facebook.com/Atleticodecoleah",
+      youtube: "https://youtube.com/@moussatoure-ecrivain?si=vSxbMZqT2F2mJwzc",
+    },
   },
 ];
 

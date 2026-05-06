@@ -15,15 +15,16 @@ const clubData: Record<string, { nom: string; acronyme: string; logo: string; he
 type Photo = { id: number; url: string; legende?: string; categorie?: string };
 
 const photosData: Record<string, Photo[]> = {
-  jag: Array.from({ length: 538 }, (_, i) => ({
+  jag: Array.from({ length: 570 }, (_, i) => ({
     id: i + 1,
     url: `/images/gallery/jag/${i + 1}.jpeg`,
     categorie: "JAG",
   })),
-  atletico: [
-    { id: 3, url: "/images/atletico-hero.jpg", legende: "Stade Atlético de Colèah", categorie: "Stade" },
-    { id: 4, url: "/images/atletico-logo.png", legende: "Logo officiel Atlético de Colèah", categorie: "Identité" },
-  ],
+  atletico: Array.from({ length: 25 }, (_, i) => ({
+    id: i + 1,
+    url: `/images/gallery/atletico/${i + 1}.jpeg`,
+    categorie: "Atlético",
+  })),
 };
 
 const PAGE_SIZE = 9;
