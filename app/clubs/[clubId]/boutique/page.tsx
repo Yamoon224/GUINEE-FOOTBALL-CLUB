@@ -27,7 +27,7 @@ const clubData: Record<string, {
     nom: "Club Atlético de Colèah",
     acronyme: "Atlético",
     logo: "/images/atletico-logo.png",
-    hero: "/images/atletico-hero.jpg",
+    hero: "/images/atletico-hero.png",
     color: "#F5B800",
     colorDark: "#C9950A",
   },

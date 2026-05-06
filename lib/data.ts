@@ -286,7 +286,7 @@ export const clubs: Club[] = [
     description:
       "Fondé le 2 octobre 1998 à Colèah, l'Atlético de Colèah est l'un des clubs les plus anciens et titrés de Conakry. Vice-champion de Guinée trois fois (2010-2012), vainqueur de la Coupe Rusal 2005, de la 1ʳᵉ édition des Trophées Areeba 2007. Depuis 2025, refondé par le président Touré Moussa, il dispose d'une structure complète hommes et femmes.",
     logo: "/images/atletico-logo.png",
-    hero: "/images/atletico-hero.jpg",
+    hero: "/images/atletico-hero.png",
     couleurPrimaire: "#F5B800",
     couleurSecondaire: "#1A1A1A",
     equipes: {

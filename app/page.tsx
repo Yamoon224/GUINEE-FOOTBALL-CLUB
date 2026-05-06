@@ -33,7 +33,7 @@ const clubs = [
         fondation: "1998",
         ville: "Colèah, Conakry",
         logo: "/images/atletico-logo.png",
-        hero: "/images/atletico-hero.jpg",
+        hero: "/images/atletico-hero.png",
         couleurPrimaire: "#F5B800",
         description: {
             fr: "Le Club Atlético de Colèah est un club historique du quartier de Colèah à Conakry. Avec une tradition sportive solide et une grande communauté de supporters, il représente la fierté de son quartier.",

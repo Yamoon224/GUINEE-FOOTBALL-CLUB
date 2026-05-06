@@ -9,7 +9,7 @@ import { ChevronLeft, CalendarDays } from "lucide-react";
 
 const clubData: Record<string, { nom: string; acronyme: string; logo: string; hero: string; color: string; colorDark: string }> = {
   jag: { nom: "Jaguar Académie Guinée", acronyme: "JAG", logo: "/images/jag-logo.png", hero: "/images/jag-hero.png", color: "#CC0000", colorDark: "#990000" },
-  atletico: { nom: "Club Atlético de Colèah", acronyme: "Atlético", logo: "/images/atletico-logo.png", hero: "/images/atletico-hero.jpg", color: "#F5B800", colorDark: "#C9950A" },
+  atletico: { nom: "Club Atlético de Colèah", acronyme: "Atlético", logo: "/images/atletico-logo.png", hero: "/images/atletico-hero.png", color: "#F5B800", colorDark: "#C9950A" },
 };
 
 type Article = { id: number; titre: string; contenu: string; image?: string; datePublication: string; categorie: string };
@@ -38,7 +38,7 @@ const actualitesData: Record<string, Article[]> = {
       id: 3,
       titre: "Atlético de Colèah : bilan du premier tour",
       contenu: "Au terme du premier tour du Championnat de Guinée, l'Atlético de Colèah occupe la 4e position avec 14 points. L'équipe Seniors a montré de belles choses, notamment une victoire 3-2 face à l'AS Kaloum Star lors d'un match disputé.",
-      image: "/images/atletico-hero.jpg",
+      image: "/images/atletico-hero.png",
       datePublication: "2025-04-18",
       categorie: "Sports",
     },
